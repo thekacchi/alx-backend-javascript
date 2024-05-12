@@ -1,29 +1,26 @@
-// 3-currency.js
-class Currency {
+export default class Currency {
   constructor(code, name) {
     this._code = code;
     this._name = name;
-  }
-
-  get code() {
-    return this._code;
-  }
-
-  set code(value) {
-    this._code = value;
   }
 
   get name() {
     return this._name;
   }
 
-  set name(value) {
-    this._name = value;
+  set name(n) {
+    this._name = n;
+  }
+
+  get code() {
+    return this._code;
+  }
+
+  set code(c) {
+    this._name = c;
   }
 
   displayFullCurrency() {
-    return `${this._name} (${this._code})`;
+    return `${this.name} (${this.code})`;
   }
 }
-
-export default Currency;
