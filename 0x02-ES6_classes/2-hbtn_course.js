@@ -1,3 +1,4 @@
+// 2-hbtn_course.js
 class HolbertonCourse {
   constructor(name, length, students) {
     this._name = '';
